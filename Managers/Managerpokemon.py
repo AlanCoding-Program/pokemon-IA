@@ -2,9 +2,9 @@ from modelos import  PokemonModel
 import psycopg
 
 class pokemons:
-    def agregar_pokemon (self, Pokemon:PokemonModel, cursor:psycopg.Cursor):
+    def agregar_pokemon (self, Poke:PokemonModel, cursor:psycopg.Cursor):
 
-        cursor.execute ("INSERT INTO pokemon (nombre) VALUES (%s)", (Pokemon.nombre,))
+        cursor.execute ("INSERT INTO pokemon (nombre) VALUES (%s)", (Poke.nombre,),)
         return "!!!pokemon agregado !!!"
     
 
@@ -19,6 +19,6 @@ class pokemons:
         return "pokemon eliminado"
     
 
-    def actualizar_pokemon (self, id: int, Pokemon: PokemonModel, cursor:psycopg.Cursor):
-        cursor.execute ("UPDATE  pokemon SET nombre= %s WHERE id_pokemon=%s", (Pokemon.nombre,id,))
+    def actualizar_pokemon (self, id: int, Poke: PokemonModel, cursor:psycopg.Cursor):
+        cursor.execute ("UPDATE  pokemon SET nombre= %s WHERE id_pokemon=%s", (Poke.nombre,id,))
         return "pokemon actualizado"
