@@ -1,10 +1,10 @@
 from pydantic import BaseModel
 
 class PokemonModel(BaseModel):
-    Nombre:str
+    nombre:str
 
 class HabilidadModel (BaseModel):
-    Habilidad:str
+    habilidad:str
 
 class TipoModel (BaseModel):
     tipo:str
