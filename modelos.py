@@ -8,3 +8,8 @@ class HabilidadModel (BaseModel):
 
 class TipoModel (BaseModel):
     tipo:str
+
+class PokedexModel (BaseModel):
+    pokemon_id: int
+    tipo_id: int
+    habilidad_id: int
