@@ -32,41 +32,45 @@ proyecto-pokemon/
 │   └── Managerpokedex.py     # Lógica para Pokedex
 ├── requirements.txt
 └── vercel.json               # Configuración de despliegue en Vercel
-
+```
 
 
 Los endpoints principales son los siguientes:
 
-**tipos**
+## tipos
+```
 | Método   | Ruta                         | Descripción                 |
 | -------- | ---------------------------- | --------------------------- |
 | `POST`   | `/tipo/crear_tipo`           | Crea un nuevo tipo          |
 | `GET`    | `/tipo/ver_tipos`            | Lista todos los tipos       |
 | `PUT`    | `/tipo/actualizar_tipo/{id}` | Actualiza un tipo existente |
 | `DELETE` | `/tipo/borrar_tipo/{id}`     | Elimina un tipo por ID      |
+```
 
-
-**pokemon**
+## pokemon
+```
 | Método   | Ruta                               | Descripción             |
 | -------- | ---------------------------------- | ----------------------- |
 | `POST`   | `/pokemon/crear_pokemon`           | Crea un nuevo Pokémon   |
 | `GET`    | `/pokemon/ver_pokemon`             | Lista todos los Pokémon |
 | `PUT`    | `/pokemon/actualizar_pokemon/{id}` | Actualiza un Pokémon    |
 | `DELETE` | `/pokemon/borrar_pokemon/{id}`     | Elimina un Pokémon      |
+```
 
-
-**habilidad**
+## habilidad
+```
 | Método   | Ruta                                   | Descripción                 |
 | -------- | -------------------------------------- | --------------------------- |
 | `POST`   | `/habilidad/crear_habilidad`           | Crea una nueva habilidad    |
 | `GET`    | `/habilidad/ver_habilidades`           | Lista todas las habilidades |
 | `PUT`    | `/habilidad/actualizar_habilidad/{id}` | Actualiza una habilidad     |
 | `DELETE` | `/habilidad/borrar_habilidad/{id}`     | Elimina una habilidad       |
+```
 
-
-**pokedex**
+## pokedex
+```
 | Método | Ruta                       | Descripción                                             |
 | ------ | -------------------------- | ------------------------------------------------------- |
 | `POST` | `/pokedex/agregar_pokedex` | Agrega un registro combinando Pokémon, tipo y habilidad |
 | `GET`  | `/pokedex/ver_pokedex`     | Devuelve la vista completa de la Pokédex con joins      |
-
+```
