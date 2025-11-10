@@ -12,7 +12,10 @@ La API que desarrollamos es de pokemon, expecificamente una que simula ser una p
 
 hicimos la API dividiendo la parte logica y las ruta, por lo que metimos los conjuntos de archivos en dos carpetas diferentes para que sea mas organizado e intuititvo para aquel que ojee el proyecto.
 
-📦 proyecto-pokemon/
+##  Estructura del Proyecto
+
+```text
+proyecto-pokemon/
 ├── api/
 │   └── main.py               # Punto de entrada principal
 ├── modelos.py                # Modelos Pydantic
@@ -29,6 +32,7 @@ hicimos la API dividiendo la parte logica y las ruta, por lo que metimos los con
 │   └── Managerpokedex.py     # Lógica para Pokedex
 ├── requirements.txt
 └── vercel.json               # Configuración de despliegue en Vercel
+
 
 
 Los endpoints principales son los siguientes:
