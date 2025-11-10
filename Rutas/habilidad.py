@@ -8,6 +8,7 @@ ClaseHabilidad= habilidades()
 
 router = APIRouter(prefix="/habilidad", tags=["habilidad routes"])
 
+
 @router.post("/crear_habilidad")
 def habilidad_post (Habilidad: HabilidadModel, cursor:psycopg.Cursor=Depends(getCursor) ):
     res= ClaseHabilidad.agregar_habilidad (Habilidad, cursor)
