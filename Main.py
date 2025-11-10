@@ -12,7 +12,7 @@ app.include_router(pokedexRouter)
 
 @app.get ("/")
 def fast():
-    return("FastAPI funcionando en Vercel ")
+    return("FastAPI funcionando en Vercel")
 
 
 
